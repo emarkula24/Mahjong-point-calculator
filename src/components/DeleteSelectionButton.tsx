@@ -1,5 +1,8 @@
+import { useContext } from 'react';
+import { UserHandContext } from './userHandProvider'; 
 
-export default function DeleteSelectionButton({userHand, setUserHand}) {
+export default function DeleteSelectionButton() {
+    const { userHand, setUserHand } = useContext(UserHandContext);
 
     const removeLatestItem = () => {
         // Create a new array without the last item

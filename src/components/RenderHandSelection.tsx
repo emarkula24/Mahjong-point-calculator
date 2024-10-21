@@ -1,10 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
+import {useContext} from 'react';
+import { UserHandContext } from './userHandProvider';
 import { tiles } from './Tiles'; // adjust the path accordingly
 
 
-const TilesTable = ({userHand, setUserHand}) => {
-
+const TilesTable = () => {
+    const { userHand, setUserHand } = useContext(UserHandContext);
     
      // Group tiles by secondaryType
     const groupedTiles = tiles.reduce((acc, tile) => {
