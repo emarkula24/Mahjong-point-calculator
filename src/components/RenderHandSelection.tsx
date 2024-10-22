@@ -1,6 +1,6 @@
 import {useContext} from 'react';
 import { UserHandContext } from './userHandProvider';
-import { tiles } from './Tiles'; // adjust the path accordingly
+import { tiles } from './Tiles';
 
 
 const TilesTable = () => {
@@ -29,7 +29,8 @@ const TilesTable = () => {
 
     return (
         <>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+        {/* goes through the objects to sort them correctly, instead of writing them all out one by one. */}
+        <div style={{ display: 'flex', flexWrap: 'wrap'}}>
         {Object.keys(groupedTiles).map((secondaryType) => (
             <div key={secondaryType} style={{ margin: '10px' }}>
             <h2>{secondaryType.charAt(0).toUpperCase() + secondaryType.slice(1)}</h2>

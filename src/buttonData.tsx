@@ -1,4 +1,4 @@
-import { tiles } from "./components/Tiles.tsx";
+import { tiles } from "./components/Tiles.js";
 
 const buttonData = tiles.map ((tile, index) => {
     const label = tile.value

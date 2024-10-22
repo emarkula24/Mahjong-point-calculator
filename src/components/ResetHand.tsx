@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { UserHandContext } from "./userHandProvider"
 
 export default function ResetHand() {
-    const {userHand, setUserHand} = useContext(UserHandContext);
+    const {setUserHand} = useContext(UserHandContext);
 
     function handleReset() {
         const newHand = [];
