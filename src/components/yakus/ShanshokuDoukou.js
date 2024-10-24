@@ -15,11 +15,10 @@ export default function isShanshokuDoukou(userHand) {
         return acc;
     }, {});
     
-    console.log(groupedTiles);
     // Check for any number if we have at least 3 tiles across different suits
     for (const number in groupedTiles) {
         const group = groupedTiles[number];
-        console.log(group)
+        
         if (group.count >= 9 && group.suits.size >= 3) {
             return true; // Found a valid Shanshoku Doukou
         }

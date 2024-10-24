@@ -7,12 +7,16 @@ import isTon from "./yakus/Ton";
 import isNan from './yakus/Nan';
 import isSha from './yakus/Sha';
 import isPei from './yakus/Pei';
-import isIipeekou from "./yakus/iipeekou";
+import isIipeekou from "./yakus/Iipeekou";
 import isChanta from "./yakus/Chanta";
 import isSankantsu from "./yakus/Sankantsu";
 import isShanshokuDoukou from "./yakus/ShanshokuDoukou";
 import isHonroutou from "./yakus/Honroutou";
 import isShousangen from './yakus/Shousangen';
+import isChiitoitsu from './yakus/Chiitoitsu';
+import isHonitsu from "./yakus/Honitsu";
+import isChinitsu from "./yakus/Chinitsu";
+import isRyanpeikou from './yakus/Ryanpeikou';
 
 export default function CountHan(userHand) {
     console.log(userHand);
@@ -32,7 +36,11 @@ export default function CountHan(userHand) {
     let sanshokuDoukou = isShanshokuDoukou(userHand);
     let honroutou = isHonroutou(userHand);
     let shousangen = isShousangen(userHand);
-    console.log(shousangen);
+    let chiitoitsu = isChiitoitsu(userHand);
+    let honitsu = isHonitsu(userHand);
+    let chinitsu = isChinitsu(userHand);
+    let ryanpeikou = isRyanpeikou(userHand);
+    console.log(chanta);
     return;
 }
 
