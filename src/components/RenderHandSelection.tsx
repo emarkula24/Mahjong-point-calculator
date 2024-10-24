@@ -20,11 +20,7 @@ const TilesTable = () => {
     const handleTileClick = (tile) => {
         console.log(`Tile clicked! ID: ${tile.id}, Value: ${tile.value}`);
         console.log(tile)
-        if (userHand.length < 14) {
         setUserHand((prev) => [...prev, tile]);
-        } else {
-            return;
-        }
     };
 
     return (

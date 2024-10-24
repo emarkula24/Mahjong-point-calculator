@@ -9,6 +9,10 @@ import isSha from './yakus/Sha';
 import isPei from './yakus/Pei';
 import isIipeekou from "./yakus/iipeekou";
 import isChanta from "./yakus/Chanta";
+import isSankantsu from "./yakus/Sankantsu";
+import isShanshokuDoukou from "./yakus/ShanshokuDoukou";
+import isHonroutou from "./yakus/Honroutou";
+import isShousangen from './yakus/Shousangen';
 
 export default function CountHan(userHand) {
     console.log(userHand);
@@ -24,7 +28,11 @@ export default function CountHan(userHand) {
     let pei = isPei(userHand);
     let iipeekou = isIipeekou(userHand);
     let chanta = isChanta(userHand);
-    console.log(chanta);
+    let sankantsu = isSankantsu(userHand);
+    let sanshokuDoukou = isShanshokuDoukou(userHand);
+    let honroutou = isHonroutou(userHand);
+    let shousangen = isShousangen(userHand);
+    console.log(shousangen);
     return;
 }
 
