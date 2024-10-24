@@ -1,4 +1,4 @@
-import SortTilesByValue from "../SortTilesByValue";
+import SortTilesByValue from "./SortTilesByValue";
 
     export default function isToitoi(userHand) {
 

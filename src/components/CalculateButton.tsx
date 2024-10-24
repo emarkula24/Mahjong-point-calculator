@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { UserHandContext } from './userHandProvider.tsx';
-import { CountYakus } from './CountYakus'; // Importing CountYakus function
+import { CountHan } from './CountHan.js'; // Importing CountYakus function
 
 export default function CalculateButton() {
     const { userHand } = useContext(UserHandContext);
@@ -8,7 +8,7 @@ export default function CalculateButton() {
 
     function handleCalculate() {
         // Call the CountYakus function with userHand
-        const calculatedPoints = CountYakus(userHand);
+        const calculatedPoints = CountHan(userHand);
         setPoints(calculatedPoints); // Update the state with calculated points
     }
 
